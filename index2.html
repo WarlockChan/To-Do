@@ -1,0 +1,43 @@
+<DOCTYPE html!>
+
+    <head>
+        <title>To-Do List App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "Stylesheet" href = "todo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+     </head>
+
+    <body>
+
+        <div id = "todo">
+            <h1>TO-DO LIST <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+
+            <input type = "text" placeholder="Напишите новую задачу">
+
+            <ul class="todos">
+                
+                <li><span><i class="fas fa-trash-alt"></i></span>Забрать ребенка из школы</li>
+            </ul>
+
+            <div id= "buttons">
+                <button class="save">Сохранить</button>
+                <button class="clear">Очистить</button>
+                <button class="tipBtn">Подсказки</button>
+            </div>
+        </div>
+
+        <div id = "overlay">
+           <a href="javascript:void(0)" class="closebtn">&times;</a>
+           <ul class="tips">
+               <li>Нажмите на карандаш для того, чтобы скрыть зону ввода</li>
+               <li>Введите текст в зону ввода и нажмите Enter для добавления новой задачи</li>
+               <li> Нажмите на задачу для того, чтобы вычеркнуть выполненное </li>
+               <li>Наведите на задачу и нажмите на появившийся значек мусора, чтобы удалить</li>
+               <li>Нажмите на кнопку "Очистить" для того, чтобы избавиться от всех созданных задач</li>
+               <li>Нажмите на кнопку "Сохранить" для сохранения прогресса. В случае повторного запуска, задачи будут сохранены </li>
+            </ul> 
+            
+        </div>
+        <script src="todo.js"></script>
+    </body>
